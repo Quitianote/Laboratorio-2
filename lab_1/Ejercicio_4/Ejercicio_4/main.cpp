@@ -54,6 +54,8 @@ int main(){
     }
 
     hora += (cont*100);
-    cout << "La hora es " << hora;
+    cout << "La hora es " << hora << endl;
 
     return 0;
+
+}
