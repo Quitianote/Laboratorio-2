@@ -1,0 +1,33 @@
+// C++ code
+//
+
+String a;
+int i = 0;
+
+
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println("Escriba una palabra: ");
+  while(Serial.available() == 0);{
+  }
+ 
+  a = Serial.readString();
+ 
+ 
+  for(; i < a.length(); i++){
+ 		if (a[i] >= 'a' && a[i] <= 'z') {
+      		a[i] = a[i] - 32;
+        }
+    }
+	i = 0;
+  
+  Serial.println(a);
+   a = "";
+  
+}
