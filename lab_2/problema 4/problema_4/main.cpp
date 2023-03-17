@@ -19,7 +19,7 @@ int main(){
 
 
 
-int conv(char arre[], int lon){//funcion del problema 4, la funcion "main"solo la use para hacer pruebas
+int conv(char arre[], int lon){//funcion del problema 4, la funcion "main" solo la use para hacer pruebas
 
     int rec = 0;
     int a = 0;
