@@ -5,7 +5,6 @@ using namespace std;
 int main(){
 
     int rec = 0;
-    int lon = 0;
     int cont_let = 0;
     int num = 0;
     int a = 0;
@@ -15,9 +14,8 @@ int main(){
 
     cout << "Ingrese cadena de caracteres: " << endl; cin.getline( arre, 100, '\n');
 
-    lon = sizeof(arre)-1;
 
-    for(;rec < lon; rec++){
+    for(;rec < 100; rec++){
         if(arre[rec] >= 48 && arre[rec] <= 57){
         }
         else{
