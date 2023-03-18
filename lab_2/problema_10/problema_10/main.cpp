@@ -14,18 +14,16 @@ int main(){
 
     cout << "Ingrese numero romano: ";cin.getline( arre, 100, '\n');
 
-    total = valor(arre[0]);
-
     for(; i < 100; i++){
         num1 = valor(arre[i]);
         num2 = valor(arre[i + 1]);
 
         if(num2 <= num1){
-            total += num2;
+            total += num1;
 
         }
         else{
-            total -= num2;
+            total -= num1;
             if( total < 0){
                 total *= -1;
 
