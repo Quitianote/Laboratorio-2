@@ -5,6 +5,7 @@ using namespace std;
 void imprimir(int matriz[5][5], int, int);
 void rotar90(int matriz[5][5], int, int);
 void rotar180(int matriz[5][5], int, int);
+void rotar270(int matriz[5][5], int, int);
 
 int main(){
 
@@ -32,8 +33,9 @@ int main(){
    rotar180(matriz, 4, 4);
    imprimir(matriz, 0, 0);
 
-
-
+   cout << "Matriz rotada 270 grados" << endl;
+   rotar270(matriz, 4, 0);
+   imprimir(matriz, 0, 0);
 
    return 0;
 
@@ -79,7 +81,18 @@ void rotar180(int matriz[5][5], int i1, int i2){//crear matriz 180 grados
 
 }
 
+void rotar270(int matriz[5][5], int i1, int i2){//crear matriz 270 grados
+    int num = 1;
 
+    for(; i2 < 5; i2 ++){
+         for(; i1 >= 0; i1 --){
+             matriz[i1][i2] = num;
+             num ++;
+         }
+     i1 = 4;
+     }
+
+}
 
 
 
