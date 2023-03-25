@@ -132,8 +132,8 @@ int fil(int matriz[3][3], int i1, int i2, int filas){//sumar filas
 
 }
 
-void imprimir(int matriz[3][3],int i1, int i2){
-    for(; i1 < 3; i1 ++){//imprimir matriz
+void imprimir(int matriz[3][3],int i1, int i2){//imprimir matriz
+    for(; i1 < 3; i1 ++){
          for(; i2 < 3; i2 ++){
              cout << matriz[i1][i2] << " ";
          }
